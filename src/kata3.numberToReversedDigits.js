@@ -1,6 +1,5 @@
 const numberToReversedDigits = number => {
-  const myArray = [];
-  myArray.push(number);
+  const myArray = Array.from(String(number), Number);
   myArray.reverse();
   return myArray;
 };
